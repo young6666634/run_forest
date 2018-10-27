@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/animal_Coin.unity
+  isLoaded: 1
+  isActive: 1
