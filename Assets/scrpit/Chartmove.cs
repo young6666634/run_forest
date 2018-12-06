@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -185,7 +185,13 @@ public class Chartmove : MonoBehaviour
         sence_count = 2;
         locktime = PlayerPrefs.GetInt("password_time");
 
-
+        if (PlayerPrefs.GetInt("orign_time") == 0)
+        {
+            orign_time = Mathf.FloorToInt(Time.time);
+            PlayerPrefs.SetInt("orign_time", orign_time);
+        }
+        else
+            orign_time = PlayerPrefs.GetInt("orign_time");
     }
     //控制最大速度
     void speedcontrol()

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -38,6 +38,7 @@ public class password_Input : MonoBehaviour {
             PlayerPrefs.SetString("password", text_passward);
             PlayerPrefs.SetInt("on", 1);
             PlayerPrefs.SetInt("deleaton", 1);
+            PlayerPrefs.SetInt("orign_time", 0);
             //最初設定限制時間3分鐘
             PlayerPrefs.SetInt("password_time", 180);
             Image_Bg.gameObject.SetActive(false);

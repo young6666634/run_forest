@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +11,7 @@ public class password_Time : MonoBehaviour {
     // Use this for initialization
     void Start () {
         new_time.gameObject.SetActive(false);
+        PlayerPrefs.SetInt("orign_time", 0);
 
     }
 	
